@@ -71,8 +71,19 @@ fun IntroScreen(onGetStartedClick:()-> Unit){
             Spacer(modifier = Modifier.height(32.dp))
             AnimatedItem(visible = isVisible, delay=0){
                 Text(text = "Bienvenido\na Stunning",
-                    color = Color.Black, fontSize = 37.sp,
+                    color = Color.Black,
+                    fontSize = 37.sp,
                     fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    lineHeight = 40.sp
+                )
+            }
+
+            Spacer(modifier = Modifier.height(32.dp))
+            AnimatedItem(visible = isVisible, delay=300){
+                Text(text = "Esta app es una demo para poner en practica los conocimientos adquiridos sobre Jetpack Compose",
+                    color = Color.Black,
+                    fontSize = 20.sp,
                     textAlign = TextAlign.Center,
                     lineHeight = 40.sp
                 )
