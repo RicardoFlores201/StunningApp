@@ -10,6 +10,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -81,13 +84,27 @@ fun IntroScreen(onGetStartedClick:()-> Unit){
 
             Spacer(modifier = Modifier.height(32.dp))
             AnimatedItem(visible = isVisible, delay=300){
-                Text(text = "Esta app es una demo para poner en practica los conocimientos adquiridos sobre Jetpack Compose",
+                Text(text = "Esta app es una demo para poner en practica " +
+                        "los conocimientos adquiridos sobre Jetpack Compose",
                     color = Color.Black,
                     fontSize = 20.sp,
                     textAlign = TextAlign.Center,
                     lineHeight = 40.sp
                 )
             }
+
+            Spacer(modifier = Modifier.weight(1f))
+            AnimatedItem(visible = isVisible, delay = 600) {
+                Button(
+                    onClick = onGetStartedClick,
+                    modifier = Modifier.fillMaxWidth().height(60.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = DarkBlue),
+                    shape = RoundedCornerShape(10.dp)
+                ) {
+                    Text("Continuar", color = Color.White, fontSize = 20.sp)
+                }
+            }
+            Spacer(modifier = Modifier.height(32.dp))
         }
     }
 
