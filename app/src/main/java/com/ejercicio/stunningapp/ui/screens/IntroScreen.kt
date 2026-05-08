@@ -43,7 +43,7 @@ fun IntroScreen(onGetStartedClick:()-> Unit){
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .background(DarkBlue)
+        .background(DarkBlue).padding(top = 25.dp)
     ) {
         Box(modifier = Modifier
             .wrapContentSize(),
