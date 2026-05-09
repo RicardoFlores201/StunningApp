@@ -5,7 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.ejercicio.stunningapp.ui.screens.IntroScreen
 import androidx.navigation.compose.composable
-import com.ejercicio.stunningapp.ui.components.MainAppContainer
+import com.ejercicio.stunningapp.ui.sections.MainAppContainer
 
 @Composable
 fun AppNavigation() {

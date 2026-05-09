@@ -1,4 +1,4 @@
-package com.ejercicio.stunningapp.ui.components
+package com.ejercicio.stunningapp.ui.sections
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.WindowInsets
@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.ejercicio.stunningapp.R
+import com.ejercicio.stunningapp.ui.components.BottomNavigationBar
 import com.ejercicio.stunningapp.ui.theme.DarkBlue
 
 
@@ -32,8 +33,8 @@ fun MainAppContainer(){
         contentWindowInsets = WindowInsets.navigationBars,
         bottomBar = {
             BottomNavigationBar(
-                selectedTab=selectedTab,
-                onTabSelected = {newTab -> selectedTab = newTab}
+                selectedTab = selectedTab,
+                onTabSelected = { newTab -> selectedTab = newTab }
             )
         },
         floatingActionButton = {

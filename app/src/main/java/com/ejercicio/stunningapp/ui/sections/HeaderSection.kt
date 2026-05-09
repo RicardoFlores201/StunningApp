@@ -1,4 +1,4 @@
-package com.ejercicio.stunningapp.ui.components
+package com.ejercicio.stunningapp.ui.sections
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

@@ -1,4 +1,4 @@
-package com.ejercicio.stunningapp.ui.components
+package com.ejercicio.stunningapp.ui.sections
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -12,6 +12,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.ejercicio.stunningapp.R
+import com.ejercicio.stunningapp.ui.components.CategoryItem
 
 @Composable
 fun BodySection() {
