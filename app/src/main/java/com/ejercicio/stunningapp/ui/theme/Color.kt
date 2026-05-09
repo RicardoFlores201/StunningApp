@@ -12,7 +12,7 @@ val Pink40 = Color(0xFF7D5260)
 
 val DarkBlue=Color(0xFF32357a)
 val LightBlue=Color(0xfff2f1f6)
-val SearchBarColor=Color(0xfffd5095)
+val SearchBarColor=Color(0xff4d5095)
 val CategoryOvalColor=Color(0xffe3e0f1)
 val TextGray=Color(0xff545454)
 val OvalBackground=Color(0xff4d5095)
