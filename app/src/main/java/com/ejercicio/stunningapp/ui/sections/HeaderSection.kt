@@ -67,7 +67,8 @@ fun HeaderSection() {
             color = Color.White,
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
-            lineHeight = 35.sp
+            lineHeight = 35.sp,
+            modifier = Modifier.padding(start = 5.dp, bottom = 8.dp)
 
         )
 
