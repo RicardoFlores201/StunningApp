@@ -22,6 +22,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.ejercicio.stunningapp.R
 import com.ejercicio.stunningapp.ui.components.BottomNavigationBar
+import com.ejercicio.stunningapp.ui.screens.HomeScreen
 import com.ejercicio.stunningapp.ui.theme.DarkBlue
 
 
@@ -59,10 +60,12 @@ fun MainAppContainer(){
             paddingValues ->
         Box(modifier = Modifier.padding(paddingValues)){
             when (selectedTab){
-                "Inicio" -> {}
-                "Cartera" -> {}
-                "Perfil" -> {}
-                "Ajustes" -> {}
+                "Inicio" -> {
+                    HomeScreen()
+                }
+                //"Cartera" -> {}
+                //"Perfil" -> {}
+                //"Ajustes" -> {}
             }
         }
 
