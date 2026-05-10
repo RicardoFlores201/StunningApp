@@ -46,7 +46,7 @@ fun IntroScreen(onGetStartedClick:()-> Unit){
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .background(DarkBlue).padding(top = 25.dp)
+        .background(DarkBlue).padding(top = 35.dp)
     ) {
         Box(modifier = Modifier
             .wrapContentSize(),
@@ -68,7 +68,7 @@ fun IntroScreen(onGetStartedClick:()-> Unit){
             modifier = Modifier
                 .fillMaxSize()
                 .background(LightBlue)
-                .padding(horizontal = 32.dp),
+                .padding(horizontal = 32.dp).padding(bottom = 10.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(modifier = Modifier.height(32.dp))
@@ -104,7 +104,7 @@ fun IntroScreen(onGetStartedClick:()-> Unit){
                     Text("Continuar", color = Color.White, fontSize = 20.sp)
                 }
             }
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(48.dp))
         }
     }
 

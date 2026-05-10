@@ -31,11 +31,12 @@ fun MainAppContainer(){
     var selectedTab by remember { mutableStateOf("Inicio") }
 
     Scaffold(
+        modifier = Modifier.padding(bottom = 19.dp),
         contentWindowInsets = WindowInsets.navigationBars,
         bottomBar = {
             BottomNavigationBar(
                 selectedTab = selectedTab,
-                onTabSelected = { newTab -> selectedTab = newTab }
+                onTabSelected = { }
             )
         },
         floatingActionButton = {
